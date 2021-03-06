@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- ref to google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet">
+
+    <!-- ref to bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- ref to my stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- ref to font awesome -->
+    <script src="https://kit.fontawesome.com/4a3eda80d3.js" crossorigin="anonymous"></script>
+    
+    <!-- ref to jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+    <script>
+    </script>
+
+    <title>Day Planner</title>
+</head>
+<body>
+    <div class="row header">
+        <div class="col m-auto">
+            <h1 class="oswald">Work Day Scheduler</h1>
+            <p class="mb-1">A simple calendar application for scheduling out your day!</p>
+            <p>Type your tasks into the calendar below and then press the save icon to store your to-do items.</p>
+            <h4 id="current-day" class="date oswald">THUR</h4>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div id="fillBox1" class="d-flex justify-content-center align-items-center col-2 col-md-1 hour">
+                9am
+            </div>
+            <div class="col-8 col-md-10 todo">
+                <textarea id="9"></textarea>
+            </div>
+            <div onclick="savePlans(9)" class="col-2 col-md-1 save">
+                <span class="fas fa-save"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div id="fillBox2" class="d-flex justify-content-center align-items-center col-2 col-md-1 hour">
+                10am
+            </div>
+            <div class="col-8 col-md-10 todo">
+                <textarea id="10"></textarea>
+            </div>
+            <div onclick="savePlans(10)" class="col-2 col-md-1 save">
+                <span class="fas fa-save"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div id="fillBox3" class="d-flex justify-content-center align-items-center col-2 col-md-1 hour">
+                11am
+            </div>
+            <div class="col-8 col-md-10 todo">
+                <textarea id="11"></textarea>
+            </div>
+            <div onclick="savePlans(11)" class="col-2 col-md-1 save">
+                <span class="fas fa-save"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div id="fillBox4" class="d-flex justify-content-center align-items-center col-2 col-md-1 hour">
+                12pm
+            </div>
+            <div class="col-8 col-md-10 todo">
+                <textarea id="12"></textarea>
+            </div>
+            <div onclick="savePlans(12)" class="col-2 col-md-1 save">
+                <span class="fas fa-save"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div id="fillBox5" class="d-flex justify-content-center align-items-center col-2 col-md-1 hour">
+                1pm
+            </div>
+            <div class="col-8 col-md-10 todo">
+                <textarea id="13"></textarea>
+            </div>
+            <div onclick="savePlans(13)" class="col-2 col-md-1 save">
+                <span class="fas fa-save"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div id="fillBox6" class="d-flex justify-content-center align-items-center col-2 col-md-1 hour">
+                2pm
+            </div>
+            <div class="col-8 col-md-10 todo">
+                <textarea id="14"></textarea>
+            </div>
+            <div onclick="savePlans(14)" class="col-2 col-md-1 save">
+                <span class="fas fa-save"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div id="fillBox7" class="d-flex justify-content-center align-items-center col-2 col-md-1 hour">
+                3pm
+            </div>
+            <div class="col-8 col-md-10 todo">
+                <textarea id="15"></textarea>
+            </div>
+            <div id="changeRed" onclick="savePlans(15)" class="col-2 col-md-1 save">
+                <span class="fas fa-save"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div id="fillBox8" class="d-flex justify-content-center align-items-center col-2 col-md-1 hour">
+                4pm
+            </div>
+            <div class="col-8 col-md-10 todo">
+                <textarea id="16"></textarea>
+            </div>
+            <div onclick="savePlans(16)" class="col-2 col-md-1 save">
+                <span class="fas fa-save"></span>
+            </div>
+        </div>
+        <div class="row bottom-line">
+            <div id="fillBox9" class="d-flex justify-content-center align-items-center col-2 col-md-1 hour">
+                5pm
+            </div>
+            <div class="col-8 col-md-10 todo">
+                <textarea id="17"></textarea>
+            </div>
+            <div onclick="savePlans(17)" class="col-2 col-md-1 save">
+                <span class="fas fa-save"></span>
+            </div>
+        </div>
+        <button onclick="clearStorage()" id="clear-button"><h3 class="oswald">Clear Schedule</h3></button>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
